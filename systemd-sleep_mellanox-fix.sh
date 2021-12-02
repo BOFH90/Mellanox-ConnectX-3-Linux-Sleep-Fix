@@ -1,8 +1,8 @@
 #!/bin/sh
-#Kopieren nach: /usr/lib/systemd/system-sleep/
+#MOVE TO: /usr/lib/systemd/system-sleep/
 case $1 in
   post)
-	sh /home/michael/Nextcloud/PC/mb-mellanox-fix.sh
-	logger "MB - Mellanox Script wurde ausgefuehrt"
+	logger "running after wakup from sleep: Mellanox Sleep Fix"
+	sh /LOCATION OF YOUR SCRIPT/mellanox-sleepfix.sh
   ;;
 esac
